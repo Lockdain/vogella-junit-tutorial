@@ -1,5 +1,6 @@
 package ru.msk.java.vogella.rule;
 
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
@@ -17,6 +18,9 @@ public class RuleTester {
     @Rule
     public TemporaryFolder folder = new TemporaryFolder();
 
+    @Rule
+    public MyCustomRule myRule = new MyCustomRule();
+
     @Test
     public void testUsingTempFolder() throws IOException {
         File createdFolder = folder.newFolder("newFolder");
@@ -24,5 +28,10 @@ public class RuleTester {
         File createdFile = folder.newFile("myFilefile.txt");
         log.info("Temp file created");
         assertTrue(createdFile.exists());
+    }
+
+    @Test
+    @Ignore
+    public void testUsingCustomRule() {
     }
 }
