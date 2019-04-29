@@ -11,4 +11,13 @@ public class MyClass {
 
         return res;
     }
+
+    public int divide(int a, int b) {
+        int res = 0;
+        if (b == 0) {
+            throw new IllegalArgumentException("Divider should not be null");
+        }
+
+        return a / b;
+    }
 }
