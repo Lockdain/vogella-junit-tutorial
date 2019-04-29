@@ -1,8 +1,9 @@
-package ru.msk.java.vogella;
+package ru.msk.java.vogella.runner;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
+import ru.msk.java.vogella.tests.MyTests;
 
 /**
  * The org.junit.runner.JUnitCore class provides the runClasses() method.

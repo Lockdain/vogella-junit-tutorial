@@ -1,8 +1,10 @@
-package ru.msk.java.vogella;
+package ru.msk.java.vogella.parameterized;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import ru.msk.java.vogella.MyClass;
+
 import static org.junit.Assert.*;
 
 import java.util.Arrays;
