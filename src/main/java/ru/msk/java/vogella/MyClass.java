@@ -20,4 +20,8 @@ public class MyClass {
 
         return a / b;
     }
+
+    public String doNothing() {
+        return "";
+    }
 }
